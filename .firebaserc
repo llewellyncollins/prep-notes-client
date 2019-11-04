@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "prep-notes-dev"
+    "default": "prep-notes-dev",
+    "production": "prep-notes-prod"
   }
 }
