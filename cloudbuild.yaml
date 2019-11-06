@@ -5,9 +5,6 @@ steps:
   # Build
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-  # Switch project
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['use', '${_PROJECT_ALIAS}']
   # Deploy
-  - name: 'gcr.io/$PROJECT_ID/firebase'
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['deploy']
