@@ -5,9 +5,9 @@ steps:
   # Build
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-    env: [
-      'FIREBASE_TOKEN=${_FIREBASE_TOKEN}'
-    ]
   # Deploy
   - name: 'gcr.io/cloud-builders/npm'
     args: ['deploy']
+    env: [
+      'FIREBASE_TOKEN=${_FIREBASE_TOKEN}'
+    ]
